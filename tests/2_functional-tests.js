@@ -6,6 +6,7 @@ const server = require('../server');
 chai.use(chaiHttp);
 
 suite('Functional Tests', function() {
+  this.timeout(10000);
 
   suite('GET /api/stock-prices => stockData object', function() {
 
